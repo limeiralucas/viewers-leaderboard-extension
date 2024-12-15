@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/limeiralucas/viewers-leaderboard-backend
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/limeiralucas/viewers-leaderboard-frontend
