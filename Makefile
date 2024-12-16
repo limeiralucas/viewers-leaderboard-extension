@@ -15,5 +15,8 @@ set-twitch-signature-validation:
 		sed -i 's/^twitch_signature_validation=.*/twitch_signature_validation=true/' .env.backend; \
 	fi
 
-update-submodules:
-  git submodule update --init --recursive
+init-submodules: 
+	git submodule update --init --recursive
+
+update-submodules: init-submodules
+	git submodule foreach git pull origin main
