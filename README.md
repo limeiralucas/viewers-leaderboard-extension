@@ -32,6 +32,11 @@ To set up the project, follow these steps:
     make setup-env fake_channel_id=your_fake_channel_id ARGS="--disable-signature-validation"
     ```
 
+    And customize the update interval of the ranking panel:
+     ```sh
+    make setup-env update_interval_ms=10000 ARGS="--disable-signature-validation"
+    ``` 
+
     The `--disable-signature-validation` argument, disables the validation of the signature sent through header when Twitch sends a request to the webhook endpoint.
 
 ## Environment Variables

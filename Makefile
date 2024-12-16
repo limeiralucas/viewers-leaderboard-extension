@@ -1,4 +1,5 @@
 fake_channel_id?=123
+update_interval_ms?=10000
 
 create-env-files:
 	cp ./backend/.env.example .env.backend
@@ -6,6 +7,7 @@ create-env-files:
 
 setup-env: create-env-files
 	sed -i 's/^VITE_FORCE_CHANNEL_ID=.*/VITE_FORCE_CHANNEL_ID=$(fake_channel_id)/' .env.frontend
+	sed -i 's/^VITE_RANKING_UPDATE_INTERVAL_MS=.*/VITE_RANKING_UPDATE_INTERVAL_MS=$(update_interval_ms)/' .env.frontend
 	$(MAKE) set-twitch-signature-validation
 
 set-twitch-signature-validation:
