@@ -5,17 +5,8 @@ services:
     ports:
       - "8000:8000"
     environment:
-      NAME: value
-      APP_NAME: "Viewers Leaderboard Backend"
-      TWITCH_SIGNATURE_VALIDATION: true
-      ENV: dev
-      APP_CLIENT_ID: client_id
-      APP_CLIENT_SECRET: cl13nt_s3cr3t
-      APP_ACCESS_TOKEN: access_token
-      WEBHOOK_SECRET: w3bh00k_s3cr3t
-      MONGO_CONN_STR: mongodb://db_username:db_pwd@mongo:27017/
-      MONGO_DB_NAME: viewers_leaderboard
       PORT: 8000
+      MONGO_CONN_STR: mongodb://db_username:db_pwd@mongo:27017/
     env_file:
       - .env.backend
     depends_on:
@@ -26,8 +17,6 @@ services:
     container_name: viewers_leaderboard_frontend
     ports:
       - "5173:80"
-    environment:
-      VITE_API_BASE_URL: http://localhost:8000
     env_file:
       - .env.frontend
     depends_on:
