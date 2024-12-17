@@ -70,3 +70,8 @@ To run the project using Docker, use the following command:
 
 ```sh
 docker-compose up --build
+```
+
+## Running inside of Twitch
+
+To check how to setup the application to run inside of Twitch, please refer to the documentation [Running on Twitch](./docs/Running%20on%20Twitch.md)
