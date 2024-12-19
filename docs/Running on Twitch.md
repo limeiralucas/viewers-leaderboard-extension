@@ -22,6 +22,7 @@ Twitch doesn't allow urls without https to be used as webhook endpoints. So, its
 
   - Change **Testing Base URI** to the base address of the application (http://localhost:5173 by default).
   - Change **Video - Fullscreen Viewer Path** to `/ranking` (This is the path where the **Ranking panel** is presented).
+  - Change the **Config Path** to `/config`
 
 After configuring the necessary options, click on **Save changes**.
 
@@ -59,7 +60,7 @@ After configuring the necessary options, click on **Save changes**.
 
 ![Install extension](./assets/install_extension.png)
 
-- After installing the extension, you need to subscribe to the webhooks. You can do so going to the top left corner, click on your profile image and on **Creator Dashboard**. After that, click on **Extensions** on the sidebar and on **My Extensions**. Now, click on the gear icon closer to your extension, this will open the config page.
+- After installing the extension, you need to subscribe to the webhooks. You can do so going to your channel page, in the top right corner, click on your profile image and on **Creator Dashboard**. After that, click on **Extensions** on the sidebar and on **My Extensions**. Now, click on the gear icon closer to your extension, this will open the config page.
 
   The config page should present you with a link that you can access to authorize the webhook subscription using your Twitch account.
 
