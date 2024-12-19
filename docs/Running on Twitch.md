@@ -2,7 +2,7 @@
 
 ## Before all
 
-Twitch doesn't allow urls without https to be used as webhook endpoints. So, its not possible to just use `http://localhost:800` to test the application. You can use any gateway of your preference to have a https url targeting your local machine. I'm used to work using [ngrok](https://ngrok.com/), but feel free to use any tool of your preference.
+Twitch doesn't allow urls without https to be used as webhook endpoints. So, its not possible to just use `http://localhost:8000` to test the application. You can use any gateway of your preference to have a https url targeting your local machine. I'm used to work using [ngrok](https://ngrok.com/), but feel free to use any tool of your preference.
 
 ## Create a Twitch extension
 

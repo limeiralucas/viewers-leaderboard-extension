@@ -9,7 +9,7 @@ To set up the project, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/viewers-leaderboard-extension.git
+    git clone https://github.com/limeiralucas/viewers-leaderboard-extension.git
     cd viewers-leaderboard-extension
     ```
 
